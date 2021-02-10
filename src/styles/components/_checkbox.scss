@@ -1,0 +1,49 @@
+.checkbox-input {
+  position: relative;
+  display: inline-block;
+
+  input[type=checkbox] {
+    appearance: none;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      left: 0;
+      border-radius: 4px;
+      background-color: $light;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 13px;
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      position: absolute;
+      top: 2px;
+      left: 7px;
+      pointer-events: none;
+      opacity: 0;
+      transform: scale(0.2) rotate(45deg);
+      transition: 0.05s;
+    }
+
+    &:checked:after {
+      opacity: 1;
+      transition: 0;
+      transform: scale(1) rotate(45deg);
+    }
+  }
+
+  label {
+    padding-left: 21px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,32 @@
+.btn {
+  position: relative;
+  font-family: $primary_font;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: background 0.1s;
+  background: $primary;
+  white-space: nowrap;
+  z-index: 1;
+  outline: none;
+
+  &:hover {
+    background: darken($primary, 2%);
+  }
+
+  &-accent {
+    background: $accent;
+
+    &:hover {
+      background: darken($accent, 2%);
+    }
+  }
+}

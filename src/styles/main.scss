@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+$primary_font: 'Nunito', sans-serif;
+
+$background_light: #FAFAF8;
+$text: #4B4B44;
+$primary: #7D7E73;
+$accent: #6D4141;
+$accent_dark: #422020;
+$light: #B5B69C;
+$accent_light: #876969;
+
+@import 'reset';
+@import 'bootstrap-grid';
+
+@import 'components/buttons';
+@import 'components/checkbox';
+
+@import 'vendor/react-modal';
+
+@import 'layouts/survivor-image';
+@import 'layouts/survivor-card';
+@import 'layouts/survivor-modal';
+
+@import 'shared/header';
+@import 'shared/base';
+
+@import 'pages/home';
